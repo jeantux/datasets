@@ -3,11 +3,9 @@ defmodule Datasets.DataSetInfo do
 
   defstruct description: "", homepage: "", links: [], files: []
 
-  @dataset_file_name "/dataset_info.json"
-
   defp load_infos(name) do
     dir_dataset = Helpers.directory_datasets()
-    path_infos = "#{dir_dataset}/#{name}/#{@dataset_file_name}"
+    path_infos = "#{dir_dataset}/#{name}/dataset_info.json"
 
     {:ok, data} = File.read(path_infos)
 

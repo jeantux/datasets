@@ -6,6 +6,7 @@ defmodule Datasets.Downloads do
     if Info.has_dataset?(name) do
       donwload(name, :force_donwload)
     end
+
     name
   end
 
