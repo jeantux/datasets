@@ -1,0 +1,1 @@
+{"description":"Wine Quality Datasets","homepage":"http://www3.dsi.uminho.pt/pcortez/wine/","links":[{"extension":"zip","url":"http://www3.dsi.uminho.pt/pcortez/wine/winequality.zip"}],"files":["winequality-red.csv","winequality-white.csv"]}
