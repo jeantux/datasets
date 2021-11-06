@@ -2,7 +2,7 @@
 
 **This library provides several public datasets in an organized and easy-to-handle manner.**
 
-The main idea is to be able to use these datasets interactively using the [livebook](https://livebook.com)
+The main idea is to be able to use these datasets interactively using the [livebook](https://livebook.dev)
 
 ### How does it work?
 
