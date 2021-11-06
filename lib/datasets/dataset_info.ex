@@ -42,7 +42,6 @@ defmodule Datasets.DataSetInfo do
 
   def separator(name) do
     infos = load_infos(name)
-    |> IO.inspect()
     infos.separator
   end
 end
