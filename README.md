@@ -4,6 +4,8 @@
 
 The main idea is to be able to use these datasets interactively using the [livebook](https://livebook.dev)
 
+This project is inspired by [tensorflow](https://github.com/tensorflow/datasets).
+
 ### How does it work?
 
 Here are stored several dataset addresses, so you can easily choose which dataset table you want to select the data from, and manipulate them quickly and easily.
