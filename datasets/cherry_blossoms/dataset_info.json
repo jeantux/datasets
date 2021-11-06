@@ -1,1 +1,1 @@
-{"description":"Cherry Blossoms","homepage":"#","links":[{"extension":"csv","url":"https://raw.githubusercontent.com/rmcelreath/rethinking/master/data/cherry_blossoms.csv"}],"files":["cherry_blossoms.csv"],"new_file_name":[], "default_file":""}
+{"description":"Cherry Blossoms","homepage":"#","links":[{"extension":"csv","url":"https://raw.githubusercontent.com/rmcelreath/rethinking/master/data/cherry_blossoms.csv"}],"files":["cherry_blossoms.csv"],"separator":";"}
