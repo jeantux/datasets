@@ -1,7 +1,7 @@
 defmodule Datasets.DataSetInfo do
   alias Datasets.Helpers
 
-  defstruct description: "", homepage: "", links: [], files: []
+  defstruct description: "", homepage: "", links: [], files: [], separator: ";"
 
   defp load_infos(name) do
     dir_dataset = Helpers.directory_datasets()
@@ -38,5 +38,11 @@ defmodule Datasets.DataSetInfo do
   def links_download(name) do
     infos = load_infos(name)
     infos.links
+  end
+
+  def separator(name) do
+    infos = load_infos(name)
+    |> IO.inspect()
+    infos.separator
   end
 end

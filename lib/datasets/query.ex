@@ -1,6 +1,7 @@
 defmodule Datasets.Query do
   alias Datasets.Helpers
   alias Datasets.Downloads
+  alias Datasets.DataSetInfo, as: Info
 
   def all(dataset_name) do
     case query(dataset_name) do
@@ -28,15 +29,16 @@ defmodule Datasets.Query do
   defp open_dataset_from_csv(name) do
     ds_dir = Helpers.directory_datasets()
     path_file = "#{ds_dir}/#{name}/#{name}.csv"
+    <<separator::utf8>> = Info.separator(name)
 
     case File.exists?(path_file) do
       true ->
         data =
           path_file
           |> File.read!()
-          |> String.split("\n")
+          |> String.split(~r{\r\n|\r|\n})
           |> Enum.filter(fn line -> line != "" end)
-          |> CSV.decode!(separator: ?;, headers: true)
+          |> CSV.decode!(separator: separator, headers: true)
 
         {:ok, data}
 
