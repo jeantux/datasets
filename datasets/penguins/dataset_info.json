@@ -1,0 +1,1 @@
+{"description":"Penguins Iter","homepage":"#","links":[{"extension":"csv","url":"https://storage.googleapis.com/download.tensorflow.org/data/palmer_penguins/penguins_lter.csv"}],"files":["penguins.csv"],"new_file_name":[],"separator":","}

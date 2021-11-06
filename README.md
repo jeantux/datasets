@@ -20,7 +20,7 @@ end
 ## Examples
 
 ```elixir
-Datasets.all(:penguins_iter)
+Datasets.all(:penguins)
 
 [
   %{
