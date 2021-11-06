@@ -24,3 +24,6 @@ datasets-*.tar
 
 # Temporary files, for example, from tests.
 /tmp/
+
+# Ignore datasets .csv
+datasets/*/*.csv
