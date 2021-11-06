@@ -34,8 +34,9 @@ defmodule Datasets.Query do
         data =
           path_file
           |> File.read!()
-          |> String.split("\r")
-          |> CSV.decode!(separator: ?,, headers: true)
+          |> String.split("\n")
+          |> Enum.filter(fn line -> line != "" end)
+          |> CSV.decode!(separator: ?;, headers: true)
 
         {:ok, data}
 

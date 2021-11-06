@@ -3,7 +3,6 @@ defmodule Datasets.Downloads do
   alias Datasets.DataSetInfo, as: Info
 
   def donwload(name) do
-
     if !Info.has_dataset?(name) do
       donwload(name, :force_donwload)
     end
@@ -23,12 +22,12 @@ defmodule Datasets.Downloads do
     dataset_dir = "#{Helpers.directory_datasets()}/#{name}"
     file_dir = "#{dataset_dir}/#{name}.#{extension}"
     File.write!(file_dir, body)
-    unzip_file(extension, file_dir, dataset_dir)
+    unzip_file(String.to_atom(extension), file_dir, dataset_dir)
   end
 
   defp unzip_file(:zip, file_dir, dataset_dir) do
     case :zip.unzip(to_charlist(file_dir), [{:cwd, to_charlist(dataset_dir)}]) do
-     {:ok, files} ->
+      {:ok, files} ->
         move_files(files, dataset_dir)
     end
   end
