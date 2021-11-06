@@ -20,22 +20,19 @@ end
 ## Examples
 
 ```elixir
-Datasets.all(:cherry_blossoms)
+Datasets.all(:penguins_iter)
+
 [
   %{
-    "doy" => "NA",
-    "temp" => "NA",
-    "temp_lower" => "NA",
-    "temp_upper" => "NA",
-    "year" => "801"
+    "Body Mass (g)" => "4600",
+    "Clutch Completion" => "Yes",
+    "Comments" => "",
+    "Culmen Depth (mm)" => "18.8",
+    ...
   },
-  %{
-    "doy" => "NA",
-    "temp" => "NA",
-    "temp_lower" => "NA",
-    "temp_upper" => "NA",
-    "year" => "802"
-  },
+  %{"Body Mass (g)" => "2975", "Clutch Completion" => "Yes", ...},
+  %{"Body Mass (g)" => "3450", ...},
+  %{...},
   ...
 ]
 ```
