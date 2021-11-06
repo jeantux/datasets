@@ -10,13 +10,10 @@ Here are stored several dataset addresses, so you can easily choose which datase
 
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `datasets` to your list of dependencies in `mix.exs`:
-
 ```elixir
 def deps do
   [
-    {:datasets, "~> 0.1.0"}
+    {:datasets, "~> 0.1.0", github: "jeantux/datasets", branch: "main"}
   ]
 end
 ```
