@@ -1,6 +1,6 @@
 # Datasets 
 ## It's an experimental project
-## Use [Scidara](https://github.com/jeantux/scidata)
+## Use [Scidata](https://github.com/jeantux/scidata)
 
 ### How does it work?
 
